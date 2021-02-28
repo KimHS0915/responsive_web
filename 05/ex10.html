@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Web</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+	<style>
+		@media (min-width: 768px) and (max-width: 991px) {
+			#menu {
+				height: 220px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="bg-info img-rounded">
+				<h1 class="text-muted text-uppercase text-center">
+					restaurant
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div id="menu" class="col-md-2 col-sm-6 bg-danger text-center img-rounded">
+				<ul class="list-unstyled">
+					<li><a href="#">pizza</a></li>
+					<li><a href="#">pasta</a></li>
+					<li><a href="#">salad</a></li>
+					<li><a href="#">drink</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8 col-sm-6 bg-warning img-rounded">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident fuga, voluptatum ipsum doloribus animi culpa molestiae ratione hic autem, eum illum quis eligendi voluptatem corporis maxime repellendus incidunt eius quas!</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident fuga, voluptatum ipsum doloribus animi culpa molestiae ratione hic autem, eum illum quis eligendi voluptatem corporis maxime repellendus incidunt eius quas!</p>
+			</div>
+			<div class="col-md-2 col-sm-12 bg-primary text-center img-rounded">
+				<ul class="list-unstyled">
+					<li>Chef list</li>
+					<li>Kim</li>
+					<li>Lee</li>
+					<li>Park</li>
+					<li>Choi</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="text-center">Welcome to restaurant</h3>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
