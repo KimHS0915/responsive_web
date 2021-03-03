@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+	<style>
+		.container {
+			background-color: orange;
+			padding: 50px 100px;
+			margin-top: 5%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container img-rounded">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<form action="#">
+						<div class="form-group has-success has-feedback">
+							<label for="exampleInputEmail1" class="control-label">Email address</label>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-user"></span>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail 주소를 입력해주세요">
+							</div>
+							<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+							<span id="inputGroupSuccess4Status" class="sr-only">E-mail 주소를 입력해주세요</span>
+						</div>
+						<div class="form-group has-error has-feedback">
+							<label for="exampleInputPassword1" class="control-label text-capitalize">password</label>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-lock"></span>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호를 입력해주세요">
+							</div>
+							<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+							<span id="inputGroupSuccess4Status" class="sr-only">비밀번호를 입력해주세요</span>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputFile">file input</label>
+							<input type="file" id="exampleInputFile">
+						</div>
+						<button type="submit" class="btn btn-default">submit</button>
+					</form>
+					<form action="#" class="form-inline">
+						<div class="form-group has-success has-feedback">
+							<label for="exampleInputEmail1" class="control-label text-capitalize">email</label>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-user"></span>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail 주소">
+							</div>
+							<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+							<span id="inputGroupSuccess4Status" class="sr-only">E-mail 주소</span>
+						</div>
+						<div class="form-group has-error has-feedback">
+							<label for="exampleInputPassword1" class="control-label text-capitalize">password</label>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-lock"></span>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="비밀번호">
+							</div>
+							<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+							<span id="inputGroupSuccess4Status" class="sr-only">비밀번호</span>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputFile">file</label>
+							<input type="file" id="exampleInputFile">
+						</div>
+						<button type="submit" class="btn btn-default">submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
