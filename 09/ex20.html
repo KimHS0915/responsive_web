@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Web</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+</head>
+<style>
+	div {
+		border: 1px solid red;
+	}
+	#img1 {
+		background-image: url(img/safe.png);
+		height: 650px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#img2 {
+		background-image: url(img/submarine.png);
+		height: 650px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+</style>
+<body>
+	<div class="container">
+		<h1>Image using Grid System</h1>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<img src="img/cabin.png" alt="cabin" class="img-responsive">
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<img src="img/cake.png" alt="cake" class="img-responsive">
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<img src="img/circus.png" alt="circus" class="img-responsive">
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<img src="img/game.png" alt="game" class="img-responsive">
+			</div>
+		</div>
+		<div class="row">
+			<div id="img1" class="col-sm-6 img-responsive"></div>
+			<div id="img2" class="col-sm-6 img-responsive"></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
