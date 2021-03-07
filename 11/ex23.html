@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>show, hide</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+	<style>
+		.img {
+			background-image: url(img/newyear.png);
+			width: 222px;
+			height: 130px;
+		}
+		.bo {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<span>inline element</span>
+	<span class="text-primary show sr-only">inline element</span>
+	<span class="bg-danger">inline element</span>
+	<div class="img text-hide">happy new year!</div>
+	<h3>visible-*</h3>
+	<div class="bg-info col-xs-12 bo visible-xs">
+		Lorem ipsum dolor sit amet.
+		<p>visible-xs</p>
+	</div>
+	<div class="bg-danger col-xs-12 bo visible-sm">
+		Lorem ipsum dolor sit amet.
+		<p>visible-sm</p>
+	</div>
+	<div class="bg-warning col-xs-12 bo visible-md">
+		Lorem ipsum dolor sit amet.
+		<p>visible-md</p>
+	</div>
+	<div class="bg-primary col-xs-12 bo visible-lg">
+		Lorem ipsum dolor sit amet.
+		<p>visible-lg</p>
+	</div>
+	<br><br><br>
+	<h3>hidden-*</h3>
+	<div class="bg-info col-xs-12 bo hidden-xs">
+		Lorem ipsum dolor sit amet.
+		<p>hidden-xs</p>
+	</div>
+	<div class="bg-danger col-xs-12 bo hidden-sm">
+		Lorem ipsum dolor sit amet.
+		<p>hidden-sm</p>
+	</div>
+	<div class="bg-warning col-xs-12 bo hidden-md">
+		Lorem ipsum dolor sit amet.
+		<p>hidden-md</p>
+	</div>
+	<div class="bg-primary col-xs-12 bo hidden-lg">
+		Lorem ipsum dolor sit amet.
+		<p>hidden-lg</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
