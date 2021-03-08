@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Component</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+	<style>
+		#span {
+			background-color: yellow;
+		}
+		#div {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<h2>span and div</h2>
+	<span id="span">span</span>
+	<div id="div">div</div>
+	<h2>glyphicon</h2>
+	<div>
+		<span class="glyphicon glyphicon-menu-hamburger"></span>
+	</div>
+	<button type="button" class="btn btn-warning btn-sm">
+		<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+	</button>
+	<h2>dropdown</h2>
+	<div class="dropdown">
+		<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			Dropdown
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+			<li role="presentation" class="dropdown-header">
+				Search
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="http://www.naver.com" target="_blank">Naver</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="http://www.daum.net" target="_blank">Daum</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="http://www.google.com" target="_blank">Google</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="http://www.bing.com" target="_blank">Bing</a>
+			</li>
+			<li role="presentation" class="divider"></li>
+			<li role="presentation" class="dropdown-header">Dropdown header</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Action</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Another action</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Something else here</a>
+			</li>
+			<li role="presentation">
+				<a role="menuitem" tabindex="-1" href="#">Separated link</a>
+			</li>
+		</ul>
+	</div>
+	<h2>nav-tabs</h2>
+	<ul class="nav nav-tabs">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="#">Profile</a></li>
+		<li role="presentation"><a href="#">Messages</a></li>
+	</ul>
+	<h2>nav-pills</h2>
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="#">Profile</a></li>
+		<li role="presentation"><a href="#">Messages</a></li>
+	</ul>
+	<h2>nav-pills nav-stacked</h2>
+	<ul class="nav nav-pills nav-stacked">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="#">Profile</a></li>
+		<li role="presentation"><a href="#">Messages</a></li>
+	</ul>
+	<h2>nav-justified</h2>
+	<ul class="nav nav-tabs nav-justified">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="#">Profile</a></li>
+		<li role="presentation"><a href="#">Messages</a></li>
+	</ul>
+	<ul class="nav nav-pills nav-justified">
+		<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="#">Profile</a></li>
+		<li role="presentation"><a href="#">Messages</a></li>
+	</ul>
+	<h2>example from w3schools</h2>
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+		<li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+			<h3>HOME</h3>
+			<p>Some content.</p>
+		</div>
+		<div id="menu1" class="tab-pane fade">
+			<h3>Menu 1</h3>
+			<p>Some content in menu 1.</p>
+		</div>
+		<div id="menu2" class="tab-pane fade">
+			<h3>Menu 2</h3>
+			<p>Some content in menu 2.</p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
