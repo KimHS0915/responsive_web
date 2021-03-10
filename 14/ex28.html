@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript ScrollSpy</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+	<style>
+		body {
+			padding-top: 70px;
+			position: relative;
+		}
+		.navbar-brand img {
+			width: 100px;
+		}
+		.navbar-text {
+			margin-right: 50px;
+		}
+		.container-fluid .row p {
+			font-size: 2em;
+		}
+		#MenuD {
+			padding-bottom: 100px;
+		}
+		.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+		    color: #EC1B1B;
+		    background-color: #ECAFBE;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.jpg" alt="Logo">
+				</a>
+				<p class="navbar-text"><a href="#" class="navbar-link">Lorem</a> ipsum dolor sit amet.</p>
+			</div>
+			<div class="collapse navbar-collapse navbar-scrollspy" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#MenuA">MenuA <span class="sr-only">(current)</span></a></li>
+					<li><a href="#MenuB">MenuB</a></li>
+					<li><a href="#MenuC">MenuC</a></li>
+					<li><a href="#MenuD">MenuD</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container-fluid">
+		<div class="row" id="MenuA">
+			<div class="col-sm-4">
+				<p>MenuA Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo explicabo iste nulla ex accusantium aliquam, alias eveniet impedit deleniti pariatur minus fugiat magnam quisquam repudiandae, officiis quia voluptates eaque? Earum, voluptatem minus perferendis totam similique officiis aspernatur. Iusto velit a amet sapiente optio numquam enim, aspernatur vero facilis praesentium.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat ab blanditiis totam aut cum sunt in praesentium illum tempora dolore eligendi dignissimos fugit assumenda velit, nostrum unde culpa odit ipsam deleniti? Nisi maiores enim incidunt architecto quaerat. Nobis eaque, nostrum veritatis pariatur voluptate fugiat dignissimos, quibusdam? Minus, animi, velit.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad impedit voluptatum culpa suscipit, velit, quibusdam dicta officia sint eius, voluptates, sapiente dolorem illo? Veniam saepe at necessitatibus nulla aliquam quisquam ea corrupti impedit eligendi consectetur adipisci aperiam accusamus vero ab illo cum dolorem earum, laudantium? Quos, ab eum nam corrupti?</p>
+			</div>
+		</div>
+		<div class="row" id="MenuB">
+			<div class="col-sm-4">
+				<p>MenuB Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt debitis sint culpa error consequatur, dolore fuga voluptate impedit nihil facilis nesciunt molestiae enim nemo quibusdam ullam. Maiores repellat ipsa veniam incidunt natus debitis ratione voluptatum molestias molestiae! Quae explicabo consequuntur ex dolorum temporibus deleniti, accusantium, veritatis eum neque excepturi?</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae nam facere repudiandae ratione provident itaque quos maiores officiis, asperiores quam non cumque, cum, consectetur vel perspiciatis numquam odio. Magni corporis atque nisi, inventore aut tenetur, autem praesentium impedit, adipisci unde veritatis veniam doloribus eos, hic modi obcaecati! Explicabo, velit, mollitia.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Tempora quaerat amet omnis enim debitis ad porro aperiam. Nemo soluta, adipisci itaque odio sunt quos eaque, cumque quasi, molestiae consequuntur perspiciatis error alias tempora modi totam placeat animi aspernatur ullam, excepturi. Vitae, maxime dolore, dolorum earum quisquam error voluptate iusto recusandae.</p>
+			</div>
+		</div>
+		<div class="row" id="MenuC">
+			<div class="col-sm-4">
+				<p>MenuC Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Iure a repellendus neque aut doloribus. Totam, sapiente. Necessitatibus quia earum velit saepe aliquam nulla labore sit harum distinctio iste voluptatem placeat sint consequatur, nisi eligendi alias natus magnam dolores facilis quam, error veniam sunt corporis. Amet quam consectetur, tempore autem sequi.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio excepturi enim perferendis, praesentium, facilis. Veritatis ab atque cupiditate soluta laboriosam voluptas in sit dolorum sequi, id odio iusto totam nostrum. Quia explicabo, aspernatur debitis quod ratione alias mollitia, tenetur minus. Nemo culpa ducimus architecto optio qui maxime officia aspernatur?</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eaque alias illo, nihil sunt magnam, eos ea laudantium facilis nam, harum! Quasi ipsam commodi sit consectetur deserunt numquam! Suscipit alias nulla architecto, sint, esse quae adipisci, error ab dicta cupiditate ea inventore maiores reiciendis illum ullam voluptatibus eum aperiam enim.</p>
+			</div>
+		</div>
+		<div class="row" id="MenuD">
+			<div class="col-sm-4">
+				<p>MenuD Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, dolore dignissimos iste qui expedita possimus. Et laborum placeat nam, quae hic, nesciunt voluptas ea, beatae voluptatum, quidem est at perferendis laudantium! Rerum est quam corrupti veniam cumque dolorum placeat libero blanditiis alias fuga magni mollitia nulla, ipsa doloremque sequi!</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio quia, magni quae beatae temporibus sint voluptatum. Atque dolorum ab culpa, minus explicabo consequuntur itaque velit nisi libero optio voluptates dolore veritatis earum, dolor iusto neque saepe praesentium sunt. Porro sit fugit architecto magnam illum ducimus nemo quaerat veniam, fugiat.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Facere provident sapiente culpa dolorum, ducimus quia nesciunt, iste, nam harum necessitatibus nostrum soluta quibusdam? Tenetur omnis aspernatur laboriosam eligendi inventore facere dolorem velit odit architecto modi harum, sequi non cupiditate fuga molestias blanditiis, esse atque nobis consectetur, dignissimos quae! Iste, amet.</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script>
+		$("body").scrollspy({ 
+			target: ".navbar-scrollspy",
+			offset: 70
+		})
+	</script>
+</body>
+</html>
