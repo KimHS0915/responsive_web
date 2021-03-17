@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>embed-responsive</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<h3>iframe without bootstrap</h3>
+	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cnXapYkboRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h3>iframe with bootstrap</h3>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" width="100%" height="100%" src="https://www.youtube.com/embed/cnXapYkboRQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
