@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tooltip</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="#" data-toggle="tooltip" title="New tooltip title">Hover over me</a>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left" id="left">Tooltip on left</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top" id="top">Tooltip on top</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" id="bottom">Tooltip on bottom</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right" id="right">Tooltip on right</button>
+
+<!-- 	<div class="tooltip top" role="tooltip">
+	  <div class="tooltip-arrow"></div>
+	  <div class="tooltip-inner">
+	    Some tooltip text!
+	  </div>
+	</div> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+		  // $('[data-toggle="tooltip"]').tooltip();
+		  $('#left').click(function() {
+		  	$('#left').tooltip('show');
+		  });
+		  $('#right').hover(function() {
+		  	$('#right').tooltip({
+		  		'placement': 'bottom'
+		  	});
+		  });
+		  $('#bottom').tooltip({
+		  	'title': 'tooltip option'
+		  });
+		  $('#top').tooltip();
+		  $('#top').on('shown.bs.tooltip', function () {
+		  	alert("Lorem ipsum dolor sit amet.");
+		  });
+		});
+	</script>
+</body>
+</html>
