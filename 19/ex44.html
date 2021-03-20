@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>toggle button</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<h2>data-toggle="button"</h2>
+	<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+		Single toggle
+	</button>
+	<h2>data-toggle="buttons"</h2>
+	<h3>input type checkbox</h3>
+	<div class="btn-group" data-toggle="buttons">
+		<label class="btn btn-primary active">
+			<input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox" autocomplete="off"> Checkbox 2
+		</label>
+		<label class="btn btn-primary">
+			<input type="checkbox" autocomplete="off"> Checkbox 3
+		</label>
+	</div>
+	<input type="checkbox">
+	<h3>input type radio</h3>
+	<div class="btn-group" data-toggle="buttons">
+		<label class="btn btn-primary active">
+			<input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+		</label>
+		<label class="btn btn-primary">
+			<input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+		</label>
+		<label class="btn btn-primary">
+			<input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+		</label>
+	</div>
+	<input type="radio">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
