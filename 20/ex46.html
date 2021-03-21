@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>모달 복습</title>
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<h1>STARBOX</h1>
+	<h2>처음부터 떠있는 이벤트 창</h2>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">
+		이벤트 참여
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">2021년 빅 이벤트</h4>
+				</div>
+				<div class="modal-body bg-warning">
+					빅 이벤트에 참여해보세요.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">다음 번에</button>
+					<a type="button" class="btn btn-primary" href="https://www.starbucks.co.kr" target="_blank">참여</a>>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	<script>
+		$('#myModal').modal()
+	</script>
+</body>
+</html>
